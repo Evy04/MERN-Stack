@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-8</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            width: auto;
+            border-collapse: collapse;
+        }
+        
+        caption {
+          color: blue;
+        }
+
+        button{
+            justify-content: center;
+        }
+  
+      </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <caption><h1>Registration Form</h1></caption>
+        
+        <tr>
+            <th>First Name </th>
+            <td> <input type="text" id="fname" name="fname" /> </td>
+        </tr>
+
+        <tr>
+            <th>Last Name </th>
+            <td> <input type="text" id="lname" name="lname" /> </td>
+        </tr>
+          
+        <tr>
+            <th>Email </th>
+            <td> <input type="email" id="email" name="email" /> </td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Gender </th>
+            <td> <input type="radio" id="male" name="fav_language" value="male" /> Male </td>
+        </tr>
+        <tr>
+            <td> <input type="radio" id="female" name="fav_language" value="female" /> Female </td>
+        </tr>
+
+        <tr>
+            <th>Age</th>
+            <td><input type="number" id="age" name="age" /></td>
+        </tr>
+
+        <tr>
+            <th>Phone Number</th>
+            <td><input type="number" id="pnumber" name="pnumber" /></td>
+        </tr>
+          
+        <tr>
+            <th>Address</th>
+            <td><textarea name="message" rows="10" cols="30"></textarea></td>
+        </tr>  
+          
+        <tr>
+            <th>State</th>
+            <td> <input type="text" id="state" name="state" /> </td>
+        </tr>  
+        
+        <tr>
+            <th>Country</th>
+            <td>  <input list="country" placeholder="Choose your country" />
+                <datalist id="country">
+                  <option value="India"></option>
+                  <option value="USA"></option>
+                  <option value="UK"></option>
+                  <option value="China"></option>
+                  <option value="Korea"></option>
+                </datalist>
+            </td>
+        </tr> 
+
+        <tr>
+            <th>Languages Known</th>
+            <td> <input type="checkbox" id="lang1" name="lang1" value="english" />
+                <label for="lang1"> English</label>
+                <input type="checkbox" id="lang2" name="lang2" value="kannada" />
+                <label for="lang2"> Kannada</label>
+                <input type="checkbox" id="lang3" name="lang3" value="hindi" />
+                <label for="lang3"> Hindi</label>
+                <input type="checkbox" id="lang4" name="lang4" value="telugu" />
+                <label for="lang2"> Telugu</label></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> <input type="checkbox" id="declare" name="declare" value="declare" />I hereby declare that all the given details are true</td>
+        </tr>
+
+
+        <tr>
+            
+            <td colspan="2" align="right"> Log in to <a href="https://ethnus.com/">Ethnus</a> website</a> </td>
+        </tr>
+
+      </table>
+      <br>
+      <div class="button">
+        <button  type="submit">Register</button>
+      </div>
+      
+    </form>
+  </body>
+</html>

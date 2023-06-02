@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-6</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+
+      label {
+        font-weight: bold;
+        padding: 2pt;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Registration Form</h1>
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" />
+        <br /><br />
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="fav_language" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="fav_language" value="female" />
+        <label for="female">Female</label>
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" />
+        <br /><br />
+        <label for="pnumber">Phone Number:</label>
+        <input type="number" id="pnumber" name="pnumber" />
+        <br /><br />
+        <label for="address">Address:</label>
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br /><br />
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" />
+        <br /><br />
+        <label for="country">Country:</label>
+        <input list="country" placeholder="Choose your country" />
+        <datalist id="country">
+          <option value="India"></option>
+          <option value="USA"></option>
+          <option value="UK"></option>
+          <option value="China"></option>
+          <option value="Korea"></option>
+        </datalist>
+
+        <br /><br />
+        <label for="lang">Languages Known:</label>
+        <input type="checkbox" id="lang1" name="lang1" value="english" />
+        <label for="lang1"> English</label>
+        <input type="checkbox" id="lang2" name="lang2" value="kannada" />
+        <label for="lang2"> Kannada</label>
+        <input type="checkbox" id="lang3" name="lang3" value="hindi" />
+        <label for="lang3"> Hindi</label>
+        <input type="checkbox" id="lang4" name="lang4" value="telugu" />
+        <label for="lang2"> Telugu</label>
+      </div>
+
+      <br />
+      <input type="checkbox" id="declare" name="declare" value="declare" />
+      <label for="declare">
+        I hereby declare that all the given details are true</label>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
